@@ -13,6 +13,6 @@ class Contact(models.Model):
     contact_date = models.DateTimeField(default=datetime.now, blank=True)
     user_id = models.IntegerField(blank=True)
 
-    __str__(self):
+    def __str__(self):
         return self.name
     
